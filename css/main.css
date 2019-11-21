@@ -2,10 +2,27 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 900px;
     margin: 100px auto;
+    height: 1800px;
+}
+#location {
+    color: rgb(0, 159, 187);
+    text-decoration: none;
+}
+#intro {
+    margin-top: 2%;
+}
+.footer {
+    border-bottom: solid 3px #ccc;
+}
+h1 {
+    font-size: 4em;
 }
 a {
     color: black;
@@ -66,23 +83,19 @@ nav li:nth-child(n+2) a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-h2, p {
-    margin: 0;
-    opacity: 0;
-}
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-footer {
+.footer {
     font-size: 20px;
 }
-footer ul {
+.footer ul {
     display: flex;
     justify-content: flex-end;
 }
-footer li {
+.footer li {
     margin: 10px;
 }
 .boxes {

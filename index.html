@@ -5,14 +5,14 @@
 		<meta charset="utf-8" />
 		<link href="css/main.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
 		<nav>
 			<header>
 				<ul>
 					<li><a href=""><ion-icon name="infinite"></ion-icon></a></li>
-					<li class="nav-li"><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#email">Contact</a></li>
 				</ul>
 			</header>
 		</nav>
@@ -23,40 +23,54 @@
 			<li><div><a href="#"></a></div></li>
 			<li><div><a href="#"></a></div></li>
 			<li><div><a href="#"></a></div></li>
+		</ul>
+		
+		<div class="footer">
+			<ul>
+				<li><a href="https://github.com/Karl191"><ion-icon name="logo-github"></ion-icon></a></li>
+				<li><a href="https://codepen.io/KVM/"><ion-icon name="logo-codepen"></ion-icon></a></li>
+				<li><a href="https://www.snapchat.com/add/swulu"><ion-icon name="logo-snapchat"></ion-icon></a></li>
 			</ul>
-			<footer>
-				<ul>
-					<li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
-					<li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-					<li><a href=""><ion-icon name="logo-codepen"></ion-icon></a></li>
-					<li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-				</ul>
-			</footer>
-			<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-			<script type="text/javascript">
-
-				TweenMax.staggerFrom("nav li", 2, {
-				delay: 0,
-				y: 20,
-				opacity: 0,
-				ease: Expo.easeInOut
-				}, 0.1);
-
-				TweenMax.staggerFrom(".boxes li", 2, {
-				delay: 1,
-				y: 20,
-				opacity: 0,
-				ease: Expo.easeInOut
-				}, 0.1);
-
-				TweenMax.staggerFrom("footer li", 2, {
-				delay: 1.5,
-				y: 20,
-				opacity: 0,
-				ease: Expo.easeInOut
-				}, 0.1);
-
-			</script>
+		</div>
+		<div id="intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+			<h1>Hi 👋</h1>
+			<h2>My name is Karl.</h2>
+			<h2> I'm an aspiring web developer living in 
+				<a id="location" href="https://www.google.com/maps/place/J%C3%B6nk%C3%B6ping/@57.7187385,12.6388891,6z/data=!4m5!3m4!1s0x46508031565bd12d:0x8b01be57dcc2f66d!8m2!3d57.7826137!4d14.1617876">Jönköping</a>. 
+			</h2>
+			<br>
+			<br>
+			<h2>Want to get in touch?</h2>
+			<br>
+		</div>
+		<div id="email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+				<h2><a href="mailto: karlantonberg@gmail.com">karlantonberg@gmail.com</h2>
+			</div>
+		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script type="text/javascript">
+			TweenMax.staggerFrom("nav li", 2, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".boxes li", 2, {
+			delay: 1,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".footer li", 2, {
+			delay: 1.5,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
 	</body>
 </html>
