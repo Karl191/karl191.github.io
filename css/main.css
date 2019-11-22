@@ -124,7 +124,7 @@ ul {
 .boxes li:nth-child(1) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/4.webp);
+        url(/img/7.png);
 }
 .boxes li:nth-child(2) {
     background-image:
@@ -134,17 +134,17 @@ ul {
 .boxes li:nth-child(3) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/4.webp);
+        url(/img/7.png);
 }
 .boxes li:nth-child(4) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/4.webp);
+        url(/img/7.png);
 }
 .boxes li:nth-child(5) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/4.webp);
+        url(/img/7.png);
 }
 .boxes li:nth-child(6) {
     background-image:
