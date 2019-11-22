@@ -21,6 +21,9 @@ body {
 #email a {
     color: rgb(0, 159, 187);
 }
+a {
+    color: black;
+}
 a:hover {
     opacity: 0.8;
 }
