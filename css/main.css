@@ -218,6 +218,17 @@ ul {
 .boxes li:nth-child(7) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+        url(/img/Scope/logo.png);
+    background-position: center;
+}
+.boxes li:nth-child(8) {
+    background-image:
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+        url(/img/default.webp);
+}
+.boxes li:nth-child(9) {
+    background-image:
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
         url(/img/Soundable/1.png);
 }
 .boxes div a {
