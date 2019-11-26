@@ -9,7 +9,29 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 900px;
     margin: 100px auto;
-    height: 1800px;
+}
+nav img {
+    height: 1em;
+}
+.skill {
+    height: 5em;
+}
+.skills-used-container img {
+    height: 5em;
+    margin: 1em 1em 0 0;
+}
+.main-image img {
+    width: 100%;
+}
+main > img {
+    width: 100%;
+    margin-top: 2em;
+}
+.skills-used-container {
+    display: flex;
+}
+.boxes li:hover {
+    opacity: 0.9;
 }
 #location {
     color: rgb(0, 159, 187);
@@ -18,29 +40,30 @@ body {
 #intro {
     margin-top: 2%;
 }
-#email a {
-    color: rgb(0, 159, 187);
-}
 a {
     color: black;
 }
 a:hover {
     opacity: 0.8;
 }
-.footer {
-    border-bottom: solid 3px #ccc;
-}
 h1 {
-    font-size: 5em;
-    text-align: center;
-    margin-bottom: 0.2em;
+    font-size: 3em;
+    line-height: 2em;
 }
-h2 {
-    text-align: center;
-    line-height: 1.4em;
+.main-text-container {
+    margin: 10px 0px;
 }
-.logo {
-    height: 30px;
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 48%;
+}
+.single-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
 }
 header ul {
     display: flex;
@@ -120,36 +143,82 @@ ul {
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image:
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+        url(/img/default.webp);
+}
+.boxes li:nth-child(1) {
+    grid-column: span 6;
+    grid-row: span 4;
+}
+.boxes li:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.boxes li:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.boxes li:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.boxes li:nth-child(5) {
+    grid-column: span 6;
+    grid-row: span 4;
+}
+.boxes li:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+.boxes li:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+.boxes li:nth-child(7) {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.boxes li:nth-child(8) {
+    grid-column: span 3;
+    grid-row: span 4;
 }
 .boxes li:nth-child(1) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/8.png);
+        url(/img/Kanye/1.png);
 }
 .boxes li:nth-child(2) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/9.png);
+        url(/img/Kanye/2.png);
 }
 .boxes li:nth-child(3) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/7.png);
+        url(/img/Kanye/3.png);
 }
 .boxes li:nth-child(4) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/7.png);
+        url(/img/Kanye/4.png);
 }
 .boxes li:nth-child(5) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/7.png);
+        url(/img/Gessle/1.png);
 }
 .boxes li:nth-child(6) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/4.webp);
+        url(/img/Yoga/1.png);
+}
+.boxes li:nth-child(7) {
+    background-image:
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
+        url(/img/Soundable/1.png);
 }
 .boxes div a {
     height: 100%;
@@ -160,30 +229,17 @@ ul {
     height: 100%;
     width: 100%;
 }
-.boxes li:nth-child(1) {
-    grid-column: 1 / -1;
-    grid-row: span 3;
-}
-.boxes li:nth-child(2) {
-    grid-column: span 2;
-    grid-row: span 7;
-}
-.boxes li:nth-child(3) {
-    grid-column: span 4;
-    grid-row: span 3;
-}
-.boxes li:nth-child(4) {
-    grid-column: span 2;
-    grid-row: span 4;
-}
-.boxes li:nth-child(5),
-.boxes li:nth-child(6) {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
 /* Homepage 980px */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 900px) {
+    body {
+        background: blue;
+    }
+    .boxes {
+        display: grid;
+        grid-auto-rows: minmax(125px, auto);
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+    }
     .boxes li:nth-child(1) {
         grid-column: span 6;
         grid-row: span 4;
@@ -207,14 +263,5 @@ ul {
     .boxes li:nth-child(6) {
         grid-column: span 6;
         grid-row: span 4;
-    }
-    h1 {
-        font-size: 8em;
-    }
-    h2 {
-        font-size: 3em;
-    }
-    #email {
-        margin-bottom: 200px;
     }
 }

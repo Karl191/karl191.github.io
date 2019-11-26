@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Looking for something? -->
+		<title>Karl's Portfolio</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/logo3.png">
+		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/"><img src="/img/Logo/1.png" alt=""></a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+				<h1><a href="mailto: karlantonberg@gmail.com">karlantonberg@gmail.com</h1>
+			</div>
+		</main>
+		<div class="footer">
+			<ul>
+				<li><a href="https://github.com/Karl191"><ion-icon name="logo-github"></ion-icon></a></li>
+				<li><a href="https://codepen.io/KVM/"><ion-icon name="logo-codepen"></ion-icon></a></li>
+				<li><a href="https://www.snapchat.com/add/swulu"><ion-icon name="logo-snapchat"></ion-icon></a></li>
+			</ul>
+		</div>
+		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script type="text/javascript">
+			TweenMax.staggerFrom("header", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".boxes li", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".footer li", 1, {
+			delay: 1,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+	</body>
+</html>
