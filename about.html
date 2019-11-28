@@ -13,20 +13,24 @@
 		<header id="homepage-header">
             <nav>
 				<ul>
-                        <li><a href="/"><img src="/img/Logo/1.png" alt=""></a></li>
+                    <li><a href="/"><img src="/img/Logo/1.png" alt=""></a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 		</header>
-        <main>
-			<img id="me" src="/img/Karl/1.png" alt="">
-            <h1>Hi, my name is Karl 👋</h1>
-            <h2></h2>
-            <h2> I currently live in
-                <a id="location" href="https://www.google.com/maps/place/J%C3%B6nk%C3%B6ping/@57.7187385,12.6388891,6z/data=!4m5!3m4!1s0x46508031565bd12d:0x8b01be57dcc2f66d!8m2!3d57.7826137!4d14.1617876">Jönköping</a>. 
-            </h2>
-            <h2>I like web things.</h2>
+        <main data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+			<div class="about-container">
+				<img id="me" src="/img/Karl/1.png" alt="">
+				<div class="about-text-container">
+					<h1>Hi 👋</h1>
+					<h2>My name is Karl.</h2>
+					<h2>I currently live in
+						<a id="location" href="https://www.google.com/maps/place/J%C3%B6nk%C3%B6ping/@57.7187385,12.6388891,6z/data=!4m5!3m4!1s0x46508031565bd12d:0x8b01be57dcc2f66d!8m2!3d57.7826137!4d14.1617876">Jönköping</a>. 
+					</h2>
+					<h2>I like web things.</h2>
+				</div>
+			</div>
             <h1>Skills</h1>
             <h2>Design</h2>
             <div class="skills-used-container">
@@ -75,6 +79,10 @@
 			opacity: 0,
 			ease: Expo.easeInOut
 			}, 0.1);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>

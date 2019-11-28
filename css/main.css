@@ -13,12 +13,19 @@ body {
 nav img {
     height: 1em;
 }
-.skill {
-    height: 5em;
+#email {
+    text-align: center;
+    margin-top: 200px;
 }
 #me {
     width: 200px;
     border-radius: 50%;
+}
+.about-container {
+    display: flex;
+}
+.about-text-container {
+    margin: 1em;
 }
 .skills-used-container img {
     height: 5em;
