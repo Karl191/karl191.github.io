@@ -34,9 +34,10 @@ nav img {
 }
 .about-container {
     display: flex;
+    margin-top: 4em;
 }
 .about-text-container {
-    margin: 1em;
+    margin-left: 2em;
 }
 .skills-used-container img {
     height: 5em;
