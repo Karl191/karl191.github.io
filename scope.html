@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Looking for something? -->
+		<title>Karl's Portfolio</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/logo3.png">
+		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<header>
+            <nav>
+				<ul>
+                    <li><a href="/"><img src="/img/Logo/1.png" alt=""></a></li>
+                    <li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+		</header>
+        <main>
+            <div class="main-text-container">
+                <video width="900" height="531" controls>
+                    <source src="/img/Scope/1.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h1>Series Intro</h1>
+                <div class="single-text">
+                    <p>
+                        Inspired after watching Mr. Robot I wanted to create an intro for something similar, a series revolving around computers and/or hacking. I came up with an imaginary TV-series called Scope Industries and created this little intro in After Effects. 
+                    </p>
+                    <p>
+						This video is the first assignment in a course I'm taking in motion graphics, so keep an eye out for what is about to come.
+                    </p>
+                </div>
+            </div>
+            <h2 class="created-text">Created with</h2>
+            <div class="skills-used-container">
+                <img src="/img/Icons/ae.svg" alt="After Effects" title="After Effects">
+            </div>
+        </main>
+		<div class="footer">
+			<ul>
+				<li><a href="https://github.com/Karl191"><ion-icon name="logo-github"></ion-icon></a></li>
+				<li><a href="https://codepen.io/KVM/"><ion-icon name="logo-codepen"></ion-icon></a></li>
+				<li><a href="https://www.snapchat.com/add/swulu"><ion-icon name="logo-snapchat"></ion-icon></a></li>
+			</ul>
+		</div>
+		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script type="text/javascript">
+			TweenMax.staggerFrom("header", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".boxes li", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".footer li", 1, {
+			delay: 1,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+	</body>
+</html>

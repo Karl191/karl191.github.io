@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+	<head>
+		<!-- Looking for something? -->
+		<title>Karl's Portfolio</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/img/logo3.png">
+		<link href="css/main.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<header>
+            <nav>
+				<ul>
+                    <li><a href="/"><img src="/img/Logo/1.png" alt=""></a></li>
+                    <li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+		</header>
+        <main>
+            <div class="main-image">
+                <img src="/img/Yoga/7.png" alt="">
+            </div>
+            <div class="main-text-container">
+                <h1>Yoga Website Mockup</h1>
+                <div class="single-text">
+                    <p>
+                        Inspired by a lot of the designs I see online (particularly by the wave of silicon valley apps that are going around) I decided that I wanted to design the website for an app. I picked a random name like Zenity, figured it had to do something with yoga or meditation. 
+                    </p>
+                    <p>
+                        I then created a fitting logo in Illustrator and website design in Adobe XD.
+                    </p>
+                </div>
+                <h2 class="created-text">Created with</h2>
+                <div class="skills-used-container">
+                    <img src="/img/Icons/xd.svg" alt="">
+                    <img src="/img/Icons/illustrator.svg" alt="">
+                </div>
+            </div>
+            <img class="border" src="/img/Yoga/1.png" alt="">
+            <img class="border" src="/img/Yoga/2.png" alt="">
+            <img class="border" src="/img/Yoga/3.png" alt="">
+        </main>
+		<div class="footer">
+			<ul>
+				<li><a href="https://github.com/Karl191"><ion-icon name="logo-github"></ion-icon></a></li>
+				<li><a href="https://codepen.io/KVM/"><ion-icon name="logo-codepen"></ion-icon></a></li>
+				<li><a href="https://www.snapchat.com/add/swulu"><ion-icon name="logo-snapchat"></ion-icon></a></li>
+			</ul>
+		</div>
+		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script type="text/javascript">
+			TweenMax.staggerFrom("header", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".boxes li", 1, {
+			delay: 0,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+			TweenMax.staggerFrom(".footer li", 1, {
+			delay: 1,
+			y: 20,
+			opacity: 0,
+			ease: Expo.easeInOut
+			}, 0.1);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+	</body>
 </html>

@@ -10,6 +10,17 @@ body {
     max-width: 900px;
     margin: 100px auto;
 }
+.boxes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.border {
+    border: solid 5px #eee;
+}
+.created-text {
+    margin-top: 1em;
+}
 nav img {
     height: 1em;
 }
@@ -18,8 +29,8 @@ nav img {
     margin-top: 200px;
 }
 #me {
-    width: 200px;
     border-radius: 50%;
+    height: 100%;
 }
 .about-container {
     display: flex;
@@ -40,9 +51,6 @@ main > img {
 }
 .skills-used-container {
     display: flex;
-}
-.boxes li:hover {
-    opacity: 0.9;
 }
 #location {
     color: rgb(0, 159, 187);
@@ -224,7 +232,7 @@ ul {
 .boxes li:nth-child(6) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Soundable/1.png);
+        url(/img/Soundable/mobile.png);
 }
 .boxes li:nth-child(7) {
     background-image:
@@ -235,12 +243,14 @@ ul {
 .boxes li:nth-child(8) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Flights/1.png);
+        url(/img/Flights/4.png);
+        background-position: center;
 }
 .boxes li:nth-child(9) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Yoga/logo1.png);
+        url(/img/Yoga/7.png);
+        background-position: center;
 }
 .boxes div a {
     height: 100%;
