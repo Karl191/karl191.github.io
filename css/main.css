@@ -28,16 +28,19 @@ nav img {
     text-align: center;
     margin-top: 200px;
 }
-#me {
+#about-picture {
     border-radius: 50%;
     height: 100%;
 }
 .about-container {
     display: flex;
-    margin-top: 4em;
+    margin: auto;
+    margin-top: 8em;
+    width: 700px;
+    margin-bottom: 8em;
 }
 .about-text-container {
-    margin-left: 2em;
+    margin-left: 4em;
 }
 .skills-used-container img {
     height: 5em;
@@ -56,6 +59,12 @@ main > img {
 #location {
     color: rgb(0, 159, 187);
     text-decoration: none;
+}
+.design-container {
+    width: 100%;
+}
+.web-container {
+    width: 100%;
 }
 #intro {
     margin-top: 2%;
