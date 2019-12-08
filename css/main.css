@@ -178,64 +178,64 @@ ul {
 .boxes li:nth-child(1) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Kanye/1.png);
+        url(/img/Kanye/1.jpg);
     background-position: center;
 }
 .boxes li:nth-child(2) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Kanye/2.png);
+        url(/img/Kanye/2.jpg);
     background-position: center;
     display: none;
 }
 .boxes li:nth-child(3) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Kanye/3.png);
+        url(/img/Kanye/3.jpg);
     background-position: center;
     display: none;
 }
 .boxes li:nth-child(4) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Kanye/4.png);
+        url(/img/Kanye/4.jpg);
     background-position: center;
     display: none;
 }
 .boxes li:nth-child(5) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Gessle/1.png);
+        url(/img/Gessle/1.jpg);
     background-position: center;
 }
 .boxes li:nth-child(6) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Soundable/mobile.png);
+        url(/img/Soundable/mobile.jpg);
     background-position: center;
 }
 .boxes li:nth-child(7) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Scope/logo.png);
+        url(/img/Scope/logo.jpg);
     background-position: center;
 }
 .boxes li:nth-child(8) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Flights/4.png);
+        url(/img/Flights/4.jpg);
     background-position: center;
 }
 .boxes li:nth-child(9) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Yoga/7.png);
+        url(/img/Yoga/7.jpg);
         background-position: center;
 }
 .boxes li:nth-child(10) {
     background-image:
         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)),
-        url(/img/Soakage/hello.png);
+        url(/img/Soakage/hello.jpg);
     background-position: center;
 }
 .boxes div a {
