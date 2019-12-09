@@ -27,23 +27,57 @@ nav img {
 nav {
     margin: 0 20px;
 }
+.skill-list-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.web-container, .design-container {
+    text-align: center;
+}
+.skills-container p {
+    background: rgb(48, 48, 48);
+    width: 100%;
+    display: inline;
+    color: white;
+    padding: 5px;
+    line-height: 40px;
+}
+.skill-list-container h2 {
+    margin: 10px 0px 10px 0px;
+}
 #email {
     text-align: center;
     margin-top: 200px;
+    font-size: 0.7em;
 }
+
 #about-picture {
     border-radius: 50%;
-    height: 100%;
+    width: 200px;
 }
 .about-container {
     display: flex;
     margin: auto;
-    margin-top: 8em;
-    width: 700px;
+    margin-top: 6em;
+    width: 60%;
     margin-bottom: 8em;
+    flex-direction: column;
 }
 .about-text-container {
-    margin-left: 4em;
+    display: flex;
+    margin-bottom: 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skills-container {
+    border-top: solid 2px #ccc;
+    padding-top: 2em;
+}
+.skills-container h1 {
+    text-align: center;
 }
 .skills-used-container img {
     height: 5em;
@@ -78,10 +112,7 @@ a {
 a:hover {
     opacity: 0.8;
 }
-h1 {
-    font-size: 3em;
-    margin: 20px 0 10px 0;
-}
+
 .main-text-container {
     margin: 10px 20px;
 }
@@ -280,6 +311,19 @@ ul {
         margin: 0px;
         width: 48%;
     }
+    .about-text-container {
+        flex-direction: row;
+    }
+    #about-picture {
+        height: 100%;
+        width: 200px;
+    }
+    #about-picture {
+        margin-right: 2em;
+    }
+    #email {
+        font-size: 1em;
+    }
 
 /* Homepage 900px */
 @media screen and (min-width: 900px) {
@@ -337,6 +381,10 @@ ul {
     }
     .main-text-container {
         margin: 10px 0px;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 20px 0 10px 0;
     }
 }
 
