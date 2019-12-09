@@ -116,6 +116,9 @@ a:hover {
 .main-text-container {
     margin: 10px 20px;
 }
+.main-text-container h1 {
+    margin: 20px 0px 20px 0px;
+}
 p {
     font-size: 1em;
     line-height: 1.5em;
